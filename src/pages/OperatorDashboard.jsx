@@ -1,13 +1,25 @@
 import LogoutButton from '../components/LogoutButton';
+import React from 'react';
 
 export default function OperatorDashboard() {
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
-      <h1 className="text-3xl font-bold text-blue-800 mb-6">Welcome Operator!</h1>
-      <LogoutButton />
-      <div className="bg-white p-6 rounded-lg shadow">
-        {/* Super admin specific content */}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 px-4">
+      <div className="backdrop-blur-md bg-white/10 shadow-2xl rounded-3xl p-10 max-w-3xl w-full text-white border border-white/20 transition-transform hover:scale-[1.01] duration-300">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-extrabold text-blue-200">
+            Welcome, Operator!
+          </h1>
+          <p className="mt-2 text-blue-100 text-sm">
+            Your operator dashboard is ready. Manage your assigned tasks efficiently.
+          </p>
+        </div>
+
+        <div className="flex justify-center mb-6">
+          <LogoutButton />
+        </div>
+
+      
       </div>
     </div>
-  )
+  );
 }

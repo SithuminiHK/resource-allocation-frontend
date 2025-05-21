@@ -3,6 +3,9 @@ import SuperAdminDashboard from './pages/SuperAdminDashboard'
 import OperatorDashboard from './pages/OperatorDashboard'
 import ViewerDashboard from './pages/ViewerDashboard'
 import LoadingSpinner from './components/LoadingSpinner'
+import React from 'react';
+
+import './App.css';
 
 function App() {
   const { keycloak, initialized } = useKeycloak()

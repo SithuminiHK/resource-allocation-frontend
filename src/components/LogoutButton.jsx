@@ -1,4 +1,5 @@
 import { useKeycloak } from '@react-keycloak/web';
+import React from 'react';
 
 function LogoutButton() {
   const { keycloak } = useKeycloak();
